@@ -1,0 +1,638 @@
+[10-Sep-2025 12:12:29 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
+[10-Sep-2025 12:33:02 UTC] PHP Fatal error:  Cannot redeclare motaphoto_settings_register() (previously declared in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:11) in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 19
+[10-Sep-2025 12:33:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[10-Sep-2025 12:33:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[10-Sep-2025 12:39:18 UTC] PHP Fatal error:  Cannot redeclare motaphoto_settings_register() (previously declared in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:13) in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 23
+[10-Sep-2025 12:39:19 UTC] PHP Fatal error:  Cannot redeclare motaphoto_settings_register() (previously declared in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:13) in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 23
+[10-Sep-2025 12:40:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:40:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:41:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_settings_section() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-settings.php(695): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-config.php(103): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-load.php(50): require_once('C:\\Users\\nheim\\...')
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(13): require_once('C:\\Users\\nheim\\...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#5 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\functions.php on line 25
+[10-Sep-2025 12:43:51 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
+[10-Sep-2025 12:47:58 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
