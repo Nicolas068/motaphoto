@@ -6,5 +6,40 @@ Author URI: NH
 Description: Thème pour un photographe 
 Version: 1.0
 Tags: photo 
-Text Domain: motaphoto
+Text Domain: mota-photo
 */
+
+/* POLICE */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Space Mono Regular */
+@font-face {
+  font-family: "Space Mono";
+  src: url("assets/fonts/SpaceMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* personnaliser le visuel de mon nouveau menu footer */
+
+.my-footer-menu{
+ margin-top: 10px;
+}
+
+.my-footer-menu li{
+ display: inline;
+ padding: 10px 10px 0 10px;
+}
+
+.my-footer-menu li a:hover{
+ color: orange;
+ border-bottom: solid 2px black;
+}
