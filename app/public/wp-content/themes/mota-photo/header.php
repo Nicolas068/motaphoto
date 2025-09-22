@@ -8,9 +8,11 @@
     </head>
 <body>
     <header id="site-header">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-img">
+         <img class="logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" alt="Logo du site">
 <?php 
  wp_nav_menu ( array (
- 'theme_location' => 'footer-menu' ,
- 'menu_class' => 'my-footer-menu', 
+ 'theme_location' => 'menu-principal' ,
+ 'menu_class' => 'my-menu-principal', 
  ) ); ?>
     </header>

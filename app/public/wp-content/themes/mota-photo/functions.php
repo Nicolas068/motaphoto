@@ -16,7 +16,7 @@ add_action('wp_enqueue_scripts', 'motaphoto_enqueue_assets');
 function register_my_menus() {
  register_nav_menus(
  array(
- 'private-menu' => __( 'Menu Privé' ),
+'menu-principal' => __( 'Menu Principal' ), // ton menu du header
  'footer-menu' => __( 'Menu Footer' ),
  )
  );
