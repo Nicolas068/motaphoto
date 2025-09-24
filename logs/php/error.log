@@ -926,3 +926,6 @@ Stack trace:
 [12-Sep-2025 07:53:04 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
 [22-Sep-2025 16:03:19 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
 [22-Sep-2025 16:38:28 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
+[23-Sep-2025 12:12:33 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
+[23-Sep-2025 12:15:22 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
+[24-Sep-2025 07:39:06 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
