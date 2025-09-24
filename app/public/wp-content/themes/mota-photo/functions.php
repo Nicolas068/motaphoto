@@ -7,7 +7,7 @@ function motaphoto_enqueue_assets() {
         'motaphoto-style',
         get_stylesheet_uri(),
         [],
-        file_exists($style_file) ? filemtime($style_file) : null
+        file_exists($style_file) ? filemtime($style_file) : '' // <-- corrigé
     );
 
     // Charger script.js
@@ -16,7 +16,7 @@ function motaphoto_enqueue_assets() {
         'motaphoto-script',
         get_stylesheet_directory_uri() . '/script.js',
         ['jquery'], // dépend de jQuery
-        file_exists($script_file) ? filemtime($script_file) : null,
+        file_exists($script_file) ? filemtime($script_file) : '', // <-- corrigé
         true // dans le footer
     );
 }

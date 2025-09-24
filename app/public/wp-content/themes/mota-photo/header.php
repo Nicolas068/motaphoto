@@ -8,11 +8,20 @@
     </head>
 <body>
     <header id="site-header">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-img">
-         <img class="logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" alt="Logo du site">
-<?php 
- wp_nav_menu ( array (
- 'theme_location' => 'menu-principal' ,
- 'menu_class' => 'my-menu-principal', 
- ) ); ?>
-    </header>
+        <div class="header-top">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-img">
+        <img class="logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" alt="Logo du site">
+    </a>
+
+    <!-- Bouton hamburger -->
+    <button class="menu-toggle" aria-label="Menu mobile">☰</button>
+    </div>
+
+    <?php 
+    wp_nav_menu( array(
+        'theme_location' => 'menu-principal',
+        'menu_class'     => 'my-menu-principal',
+        'container'      => false, // enlève le <div> automatique
+    ) );
+    ?>
+</header>

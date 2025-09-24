@@ -27,7 +27,7 @@ Text Domain: mota-photo
   font-style: normal;
   font-display: swap;
 }
-
+/* header */
 header {
   display: flex;
   justify-content: space-between; 
@@ -57,46 +57,258 @@ header ul li a {
   right:100px;
 }
 
-.my-footer-menu {
- list-style: none;
-  display: flex;
-  gap: 20px; 
-  justify-content: center;
-}
- 
-#menu-footer-menu li a {
-  color: black;         
-  text-decoration: none; 
-  size: 16px;
+/* Menu mobile */
+.menu-toggle {
+  display: none;
 }
 
+@media (max-width: 768px) {
+  #site-header {
+    flex-direction: column;
+    align-items: stretch;
+    position: relative; /* le menu s’aligne sous le header */
+    z-index: 1000;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: center;  /* centre logo et hamburger */
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .logo-img {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* centre le logo */
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: -94px; /* hamburger à droite */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+
+  /* Menu caché */
+  .my-menu-principal {
+    max-height: 0;           /* caché au départ */
+    overflow: hidden;        /* cache le contenu */
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 100%;               /* sous header */
+    left: 0;
+    right: 0;
+    padding: 0 20px;         /* padding horizontal seulement */
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: max-height 0.4s ease; /* animation slide */
+  }
+
+  /* Menu actif */
+  .my-menu-principal.active {
+    max-height: 500px; /* assez grand pour afficher tous les liens */
+    padding: 20px;
+  }
+
+  .my-menu-principal li {
+    margin: 15px 0;
+    list-style: none;
+    text-align: center; /* centre chaque item */
+  }
+
+  @media (max-width: 768px) {
+  .my-menu-principal li a {
+    display: inline-block; /* largeur = largeur du texte */
+    padding: 5px 10px;     /* petit espace autour du texte */
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease; /* effet doux */
+  }
+
+  .my-menu-principal li a:hover {
+    background-color: red;
+    color: #fff; /* texte blanc pour contraste */
+  }
+}
+
+}
+
+
+
+/* footer */
+.my-footer-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.my-footer-menu li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px; /* petit espace autour du texte */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.my-footer-menu li a:hover {
+  background-color: red;
+  color: #fff;
+}
+
+/* --- Responsive : footer en colonne --- */
+@media (max-width: 768px) {
+  .my-footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
 /* --- Modale --- */
 
+/* Overlay */
 .modal-overlay {
-  display: none; /* caché par défaut */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.6); /* fond assombri */
   z-index: 9999;
 }
 
+/* Boîte du modal */
 .modal-content {
-  background: #fff;
-  width: 90%;
-  max-width: 500px;
-  margin: 5% auto;
-  padding: 20px;
-  border-radius: 10px;
   position: relative;
+  width: 597px;
+  max-height: 92vh; /* sécurité : jamais plus haut que 90% de l'écran */
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 20px;
+  
 }
 
+/* Bouton fermeture */
 .modal-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
   cursor: pointer;
+  color: #000;
+  z-index: 10;
 }
+
+/* Texte géant en fond */
+.modal-content::before {
+  content: "TACTCONTACTCON\A NTACTCONTACTCO";
+  position: absolute;
+  font-family: "Space Mono", monospace;
+  font-style: italic;
+  font-weight: 400; /* pas en gras */
+  font-size: 5rem;
+  color: #000; /* couleur pleine */
+  white-space: pre-line; /* retour à la ligne avec \A */
+  line-height: 1;
+  z-index: 1;
+}
+
+/* Formulaire CF7 */
+.modal-content .wpcf7-form {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 180px;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  color: #111;
+}
+
+/* Labels */
+.modal-content .wpcf7-form label {
+  display: block;
+  width: 273px;       /* même largeur que les champs */
+  margin: 10px auto 5px;  /* auto pour centrer */
+  font-size: 0.85rem;
+  font-weight: 400;   /* pas gras */
+  text-align: left;   /* texte aligné au début du champ */
+  letter-spacing: 0.5px;
+}
+
+
+/* Champs simples (Nom, Email, Réf.) */
+.modal-content .wpcf7-form input[type="text"],
+.modal-content .wpcf7-form input[type="email"],
+.modal-content .wpcf7-form input[type="tel"],
+.modal-content .wpcf7-form input[type="url"],
+.modal-content .wpcf7-form input[type="number"] {
+  width: 273px;
+  height: 63px;       /* ✅ hauteur fixe */
+  margin: 10px auto;
+  display: block;
+  padding: 0 12px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+/* Champ message (textarea) */
+.modal-content .wpcf7-form textarea {
+  width: 273px;
+  height: 210px;      /* ✅ hauteur fixe */
+  margin: 10px auto;
+  display: block;
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  resize: none;
+}
+
+/* Bouton envoyer */
+.modal-content .wpcf7-form input[type="submit"] {
+  width: 273px;
+  height: 63px;       /* bouton harmonisé */
+  margin: 10px auto 20px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;   /* pas gras */
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 4px;
+  background: #D8D8D8;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content .wpcf7-form input[type="submit"]:hover {
+  background: #E00000;
+  ;
+}
+
+
+
+

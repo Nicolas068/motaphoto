@@ -1,9 +1,7 @@
 <!-- Modal Contact -->
 <div id="contact-modal" class="modal-overlay">
   <div class="modal-content">
-    <span class="modal-close">&times;</span>
-    <h2>Contactez-nous</h2>
-    <?php echo do_shortcode('[contact-form-7 id="123" title="Formulaire de contact"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="66927a4" title="Contact form 1"]'); ?>
   </div>
 </div>
 
