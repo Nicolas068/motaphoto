@@ -80,9 +80,9 @@ header ul li a {
   }
 
   .logo-img {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* centre le logo */
+    height: 10px;
+    max-height: 14px;
+    margin-right: 80px; 
   }
 
   .menu-toggle {
@@ -124,25 +124,21 @@ header ul li a {
     text-align: center; /* centre chaque item */
   }
 
-  @media (max-width: 768px) {
+  
   .my-menu-principal li a {
     display: inline-block; /* largeur = largeur du texte */
     padding: 5px 10px;     /* petit espace autour du texte */
-    font-size: 18px;
+    margin-left: 55%;
+    font-size: 20px;
     color: #000;
     text-decoration: none;
     transition: background 0.3s ease, color 0.3s ease; /* effet doux */
   }
 
   .my-menu-principal li a:hover {
-    background-color: red;
-    color: #fff; /* texte blanc pour contraste */
+    color:#2f2f2f ; 
   }
 }
-
-}
-
-
 
 /* footer */
 .my-footer-menu {
@@ -163,8 +159,7 @@ header ul li a {
 }
 
 .my-footer-menu li a:hover {
-  background-color: red;
-  color: #fff;
+  color: #2f2f2f;
 }
 
 /* --- Responsive : footer en colonne --- */
@@ -309,6 +304,70 @@ header ul li a {
   ;
 }
 
+/* --- Media Queries pour petits écrans --- */
+/* --- Responsive complément modal --- */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 15px 10px 20px;
+  }
 
+  .modal-content::before {
+    font-size: 3rem;     /* réduire le texte géant */
+    line-height: 1.1;    /* garder la densité */
+    left: 2%;
+    top: 5%;
+  }
 
+  .modal-content .wpcf7-form {
+    margin-top: 100px;
+  }
+
+  /* Champs et bouton prennent toute la largeur dispo */
+  .modal-content .wpcf7-form input[type="text"],
+  .modal-content .wpcf7-form input[type="email"],
+  .modal-content .wpcf7-form input[type="tel"],
+  .modal-content .wpcf7-form input[type="url"],
+  .modal-content .wpcf7-form input[type="number"],
+  .modal-content .wpcf7-form textarea,
+  .modal-content .wpcf7-form input[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-content .wpcf7-form input[type="submit"] {
+    width: 85%;         /* bouton moins large */
+    max-width: 240px;   /* garde une limite */
+    height: 50px;
+    font-size: 0.95rem;
+    margin: 15px auto;  /* bien centré */
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    border-width: 2px;
+  }
+
+  .modal-content::before {
+    font-size: 3rem;     /* encore plus petit sur mobile */
+    line-height: 1.1;
+    top: 1%;
+  }
+
+  .modal-close {
+    font-size: 20px;
+    top: 8px;
+    right: 10px;
+  }
+  .modal-content .wpcf7-form input[type="submit"] {
+    width: 90%;         /* encore plus réduit */
+    height: 45px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin: 12px auto;
+  }
+
+}
 
