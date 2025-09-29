@@ -371,3 +371,75 @@ header ul li a {
 
 }
 
+/* CPT */
+
+/* Grille 2 colonnes */
+.photo-single-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Colonne gauche */
+.photo-infos {
+  font-family: "Space Mono", monospace;
+}
+
+.photo-title {
+  font-size: 2.5rem;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.photo-infos p {
+  margin: 8px 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.photo-divider {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #000;
+}
+
+.photo-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-contact {
+  background: #ddd;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}
+
+/* Colonne droite */
+.photo-thumbnail img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.photo-navigation a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+}
