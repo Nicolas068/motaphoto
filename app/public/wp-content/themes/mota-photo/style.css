@@ -25,8 +25,15 @@ Text Domain: mota-photo
   src: url("assets/fonts/SpaceMono-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: swap; 
 }
+
+body {
+  max-width: 1400px;   /* limite globale */
+  margin: 0 auto;      /* centre tout */
+  padding: 0 40px;     /* espace blanc partout sur les côtés */
+}
+
 /* header */
 header {
   display: flex;
@@ -147,7 +154,7 @@ header ul li a {
   gap: 20px;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 50px;
 }
 
 .my-footer-menu li a {
@@ -170,7 +177,7 @@ header ul li a {
     gap: 10px;
   }
 }
-/* --- Modale --- */
+         /* MODALE */
 
 /* Overlay */
 .modal-overlay {
@@ -371,75 +378,317 @@ header ul li a {
 
 }
 
-/* CPT */
-
-/* Grille 2 colonnes */
-.photo-single-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+           /* CONTENU PHOTO */
+/* ----- Mise en page principale ----- */
+.photo-layout {
+  display: flex;
+  align-items: flex-end; /* aligne les 2 colonnes en bas */
+  justify-content: space-between;
 }
-
-/* Colonne gauche */
+/* Colonne gauche = Infos */
 .photo-infos {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
   font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Infos alignées en bas */
+  height: 100%;
+  margin-left: 40px;
 }
 
 .photo-title {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-style: italic;
+  margin-bottom: 20px;
+  font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  line-height: 58px;
 }
 
 .photo-infos p {
-  margin: 8px 0;
+  margin: 6px 0;
   font-size: 1rem;
   text-transform: uppercase;
+  font-family: "Space Mono", monospace;
 }
 
-.photo-divider {
-  margin: 30px 0;
-  border: none;
-  border-top: 1px solid #000;
-}
-
-.photo-contact {
+/* Colonne droite = Photo */
+.photo-display {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
+  align-items: flex-end; /* colle l’image en bas */
 }
 
-.btn-contact {
-  background: #ddd;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #000;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  border-radius: 3px;
-}
 
-/* Colonne droite */
-.photo-thumbnail img {
-  max-width: 100%;
-  height: auto;
+.photo-display img {
   display: block;
 }
 
+.photo-img.portrait {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  object-position: center bottom; /* colle bien en bas */
+  margin-right: 15%;
+}
+
+.photo-img.landscape {
+  width: 26vw;       /* même largeur que portrait */
+  height: auto;
+  max-height: 50vh;
+  object-fit: cover;
+  object-position: center bottom;
+  margin-right: auto; /* colle le paysage à gauche */
+  
+}
+
+.photo-img.portrait,
+.photo-img.landscape {
+  width: 450px;     /* même largeur */
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.photo-display.landscape {
+  align-items: flex-end; /* colle l’image en bas */
+}
+
+.photo-display.portrait {
+  align-items: center;   /* centre l’image */
+}
+/* ----- Footer ----- */
+
+.photo-footer-wrapper {
+  width: 100%;               /* prend toute la largeur du site */
+  position: relative;
+}
+
+.photo-footer {
+  position: relative;
+  max-width: 700px; /* largeur max = image paysage */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.photo-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0; /* reste bien calé à droite */
+  height: 1px;
+  background: #000;
+  width: calc(100% - 72px); /* raccourci de 50px à gauche */
+}
+
+.photo-footer-wrapper::after {
+  content: "";
+  display: block;
+  width: 80%;            /* largeur du trait (réduit) */
+  height: 1px; 
+  background: #000;
+  margin-left: 69px;
+  margin-top: 30px;
+}
+
+/* Zone contact */
+.photo-contact {
+   display: flex;
+  align-items: center;
+  justify-content: space-between; /* espace entre gauche - milieu - droite */
+  width: 100%; /* occupe toute la largeur */
+  padding-top: 10px;
+  margin-left: 70px; /* on annule le décalage */
+}
+
+.photo-contact p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-top: 50px;
+  position:relative;
+  top: -1.5vh;
+
+}
+
+.btn-contact {
+  background: #D8D8D8;
+  border: none;
+  text-decoration: none;
+  color: #000;
+  text-transform: none;
+  font-size: 1vw;   
+  border-radius: 0.3vw;
+  transition: background 0.3s ease;
+  width: 16vw;   
+  height: 5vh;   
+  display: flex;              
+  justify-content: center;    
+  align-items: center;   
+  position: relative;
+  left: 3vw;
+  top: 1.5vh
+  ;
+}
+
+.btn-contact:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Navigation */
 .photo-navigation {
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 20px;
+  align-items: center;
+  position: relative;
 }
 
 .photo-navigation a {
-  font-size: 1.5rem;
-  text-decoration: none;
+  font-size: 1rem;
   color: #000;
+  text-decoration: none;
+  position: relative;
+  left: 457px;
+  top: 50px;
 }
+
+.photo-navigation a::after {
+  position: absolute;        /* fixé à l’écran */
+  top: 50%;               /* centré verticalement */
+  right: 20px;            /* distance du bord droit */
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+  display: none;          /* invisible par défaut */
+  z-index: 2000;
+}
+
+
+.photo-navigation a:hover::after {
+  display: block;
+  background-image: attr(data-thumb url); /* affiche la miniature du lien */
+}
+
+
+
+
+/*Responsive page photo*/
+
+/* ========================= */
+/*       RESPONSIVE          */
+/* ========================= */
+
+/* --- Tablette --- */
+@media (max-width: 1024px) {
+  .photo-layout {
+    flex-direction: column; /* infos en haut, photo en bas */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .photo-infos {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .photo-title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .photo-img.portrait,
+  .photo-img.landscape {
+    width: 70%;
+    max-width: 400px;
+    margin: 20px auto 0;
+  }
+
+  .btn-contact {
+    font-size: 1rem;
+    width: 200px;
+    height: 45px;
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+  }
+
+  .photo-navigation {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .photo-navigation a {
+    position: static; /* plus de position forcée */
+    font-size: 0.9rem;
+  }
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+  .photo-title {
+    font-size: 2.2rem;
+  }
+
+  .photo-infos p {
+    font-size: 0.85rem;
+  }
+
+  .photo-img.portrait,
+  .photo-img.landscape {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .photo-contact {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .btn-contact {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+
+  .photo-footer-wrapper::after {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* --- Très petit mobile --- */
+@media (max-width: 480px) {
+  .photo-title {
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+
+  .photo-img.portrait,
+  .photo-img.landscape {
+    max-width: 250px;
+  }
+
+  .btn-contact {
+    width: 90%;
+    font-size: 0.85rem;
+    height: 40px;
+  }
+
+  .photo-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+

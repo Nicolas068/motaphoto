@@ -35,3 +35,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// survol miniature
+
+ document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll(".photo-navigation a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("mouseenter", function() {
+      const thumb = this.getAttribute("data-thumb");
+      if (thumb) {
+        let preview = document.createElement("div");
+        preview.classList.add("thumb-preview");
+        preview.style.position = "absolute";
+        preview.style.bottom = "120%";
+        preview.style.left = "50%";
+        preview.style.transform = "translateX(-50%)";
+        preview.style.width = "80px";
+        preview.style.height = "60px";
+        preview.style.backgroundImage = `url(${thumb})`;
+        preview.style.backgroundSize = "cover";
+        preview.style.border = "1px solid #ccc";
+        this.appendChild(preview);
+      }
+    });
+
+    link.addEventListener("mouseleave", function() {
+      const preview = this.querySelector(".thumb-preview");
+      if (preview) preview.remove();
+    });
+  });
+});
+
+
+
