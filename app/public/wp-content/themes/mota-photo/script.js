@@ -1,24 +1,40 @@
 // Modal //
 
+// MODALE CONTACT
 document.addEventListener("DOMContentLoaded", function () {
-  const contactLink = document.querySelector('a[href*="contact"]'); // le lien CONTACT du menu
   const modal = document.getElementById("contact-modal");
-  const closeBtn = document.querySelector(".modal-close");
 
-  if (contactLink) {
-    contactLink.addEventListener("click", function (e) {
-      e.preventDefault(); // empêche la navigation
+  // --- Récupère la ref sur les pages photo ---
+let currentRef = "";
+const photoRef = document.querySelector(".photo-ref");
+if (photoRef) currentRef = photoRef.textContent.trim();
+
+
+  // --- Transforme tous les liens vers /contact/ en déclencheurs ---
+  document.querySelectorAll('a[href*="contact"]').forEach(link => {
+    link.classList.add("open-contact");
+    link.setAttribute("href", "#");
+  });
+
+  // --- Ouvre la modale ---
+  document.querySelectorAll(".open-contact").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      const refField = modal.querySelector("#photo-reference");
+      const ref = e.currentTarget.dataset.ref || currentRef || "";
+      if (refField) refField.value = ref;
       modal.style.display = "block";
     });
-  }
+  });
 
-  // fermer si clic à l’extérieur
-  window.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
+  // --- Ferme la modale ---
+  window.addEventListener("click", e => {
+    if (e.target === modal) modal.style.display = "none";
   });
 });
+
+
+
 
 // menu hamburger
 

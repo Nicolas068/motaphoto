@@ -931,3 +931,18 @@ Stack trace:
 [24-Sep-2025 07:39:06 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
 [24-Sep-2025 08:12:57 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [24-Sep-2025 12:44:40 UTC] Erreur d’événement de replanification de tâche pour le crochet wp_version_check. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"twicedaily","args":[],"interval":43200}
+[29-Sep-2025 08:04:20 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\single-photos.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#3 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\single-photos.php on line 25
+[29-Sep-2025 08:05:30 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\single-photos.php:25
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\nheim\\...')
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#3 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\single-photos.php on line 25
+[29-Sep-2025 08:32:01 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
