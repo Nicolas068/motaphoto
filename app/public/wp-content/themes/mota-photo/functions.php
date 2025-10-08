@@ -61,3 +61,54 @@ function load_more_photos() {
   }
   wp_die();
 }
+
+// AJAX : filtrer les photos
+
+function motaphoto_filter_photos() {
+  $page = isset($_POST['page']) ? intval($_POST['page']) : 1;
+
+  $args = [
+    'post_type'      => 'photo',
+    'posts_per_page' => 8,
+    'paged'          => $page,
+    'orderby'        => 'date',
+    'order'          => isset($_POST['ordre']) ? sanitize_text_field($_POST['ordre']) : 'DESC',
+    'tax_query'      => []
+  ];
+
+  if (!empty($_POST['categorie'])) {
+    $args['tax_query'][] = [
+      'taxonomy' => 'categorie',
+      'field'    => 'slug',
+      'terms'    => sanitize_text_field($_POST['categorie']),
+    ];
+  }
+
+  if (!empty($_POST['format'])) {
+    $args['tax_query'][] = [
+      'taxonomy' => 'format',
+      'field'    => 'slug',
+      'terms'    => sanitize_text_field($_POST['format']),
+    ];
+  }
+
+  if (count($args['tax_query']) > 1) {
+    $args['tax_query']['relation'] = 'AND';
+  }
+
+  $photos = new WP_Query($args);
+
+  if ($photos->have_posts()) :
+    ob_start();
+    while ($photos->have_posts()) : $photos->the_post();
+      get_template_part('template-parts/photo-card');
+    endwhile;
+    echo ob_get_clean();
+  else :
+    echo '<p>Aucune photo trouvée.</p>';
+  endif;
+
+  wp_die();
+}
+add_action('wp_ajax_filter_photos', 'motaphoto_filter_photos');
+add_action('wp_ajax_nopriv_filter_photos', 'motaphoto_filter_photos');

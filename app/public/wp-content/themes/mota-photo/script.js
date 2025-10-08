@@ -107,3 +107,60 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+// Filtre
+
+jQuery(document).ready(function($) {
+  let page = 1;
+  let currentFilters = {
+    categorie: '',
+    format: '',
+    ordre: 'DESC'
+  };
+
+  function loadPhotos(reset = false) {
+    const data = {
+      action: 'filter_photos',
+      page: page,
+      categorie: currentFilters.categorie,
+      format: currentFilters.format,
+      ordre: currentFilters.ordre
+    };
+
+    $.ajax({
+      url: loadmore.ajaxurl,
+      type: 'POST',
+      data: data,
+      beforeSend: function() {
+        if (reset) $('#photo-grid').css('opacity', '0.5');
+      },
+      success: function(response) {
+        if (reset) $('#photo-grid').html(response);
+        else $('#photo-grid').append(response);
+        $('#photo-grid').css('opacity', '1');
+      }
+    });
+  }
+
+  // Filtres
+  $('#photo-filters select').on('change', function() {
+    currentFilters = {
+      categorie: $('#filter-categorie').val(),
+      format: $('#filter-format').val(),
+      ordre: $('#filter-ordre').val()
+    };
+    page = 1;
+    loadPhotos(true);
+  });
+
+  // Charger plus
+  $('#load-more').on('click', function(e) {
+    e.preventDefault();
+    page++;
+    loadPhotos(false);
+  });
+});
+
+
+// Lightbox
+

@@ -14,5 +14,6 @@
  'menu_class' => 'my-footer-menu', 
  ) ); 
  wp_footer(); ?>
+
 </body>
 </html>

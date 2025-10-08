@@ -818,8 +818,90 @@ header ul li a {
   font-style: italic;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 2px #fff; /* contour blanc */
+  -webkit-text-stroke: 2px #fff; 
   letter-spacing: 3px;
 }
+
+/* ===== Filtres Galerie ===== */
+
+/* ===== Filtres alignés avec la galerie ===== */
+.photo-filtres {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px; /* même largeur que la galerie */
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#photo-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.filter-left {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+.filter-right {
+  display: flex;
+  margin-right: 25px;
+}
+
+/* Style des select */
+#photo-filters select {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 16px;
+  min-width: 180px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%232c2c2c' d='M6 8L0 0h12z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 8px;
+}
+
+#photo-filters select:hover {
+  border-color: #000;
+}
+
+#photo-filters select:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .photo-filtres {
+    justify-content: center;
+  }
+
+  #photo-filters {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .filter-left,
+  .filter-right {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+
 
 
