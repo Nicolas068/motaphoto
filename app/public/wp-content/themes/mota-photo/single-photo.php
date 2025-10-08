@@ -104,8 +104,8 @@ get_header(); ?>
                 }
                 ?>
             </div> 
-        </div><!-- /.photo-footer -->
-    </div><!-- /.photo-footer-wrapper -->
+        </div>
+    </div>
 
 <?php endwhile; endif; ?>
 
@@ -116,74 +116,46 @@ get_header(); ?>
 
   <div class="photo-apparentees-grid">
     <?php
-   $terms = wp_get_post_terms(get_the_ID(), 'categorie');
+    $terms = wp_get_post_terms(get_the_ID(), 'categorie');
 
-if ($terms && !is_wp_error($terms)) {
-    $term_id = $terms[0]->term_id;
+    if ($terms && !is_wp_error($terms)) {
+        $term_id = $terms[0]->term_id;
 
-    $args = [
-        'post_type'      => 'photo',
-        'posts_per_page' => 2,
-        'post__not_in'   => [get_the_ID()],
-        'orderby'        => 'rand', // ordre aléatoire
-        'tax_query'      => [
-            [
-                'taxonomy' => 'categorie',
-                'field'    => 'term_id',
-                'terms'    => $term_id,
+        $args = [
+            'post_type'      => 'photo',
+            'posts_per_page' => 2,
+            'post__not_in'   => [get_the_ID()],
+            'orderby'        => 'rand',
+            'tax_query'      => [
+                [
+                    'taxonomy' => 'categorie',
+                    'field'    => 'term_id',
+                    'terms'    => $term_id,
+                ],
             ],
-        ],
-    ];
-} else {
-    $args = [
-        'post_type'      => 'photo',
-        'posts_per_page' => 2,
-        'post__not_in'   => [get_the_ID()],
-        'orderby'        => 'rand',
-    ];
-}
-
+        ];
+    } else {
+        $args = [
+            'post_type'      => 'photo',
+            'posts_per_page' => 2,
+            'post__not_in'   => [get_the_ID()],
+            'orderby'        => 'rand',
+        ];
+    }
 
     $related_photos = new WP_Query($args);
 
     if ($related_photos->have_posts()) :
-        while ($related_photos->have_posts()) : $related_photos->the_post(); ?>
-        
-     <article class="photo-item">
-  <div class="photo-hover">
-    <?php 
-    // Récupère les infos d’image
-    $thumb_id   = get_post_thumbnail_id();
-    $thumb_meta = wp_get_attachment_metadata($thumb_id);
-    $orientation = ($thumb_meta['width'] > $thumb_meta['height']) ? 'landscape' : 'portrait';
-    $thumb_url  = get_the_post_thumbnail_url(null, 'large');
-    ?>
-
-    <img src="<?php echo esc_url($thumb_url); ?>" class="<?php echo esc_attr($orientation); ?>" alt="<?php the_title_attribute(); ?>">
-
-    <div class="photo-icons">
-      <a href="<?php the_permalink(); ?>" class="icon-eye" title="Voir les infos">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/eye.svg" alt="Voir">
-      </a>
-      <a href="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id(), 'full'); ?>" class="icon-fullscreen" title="Plein écran">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/fullscreen.svg" alt="Plein écran">
-      </a>
-    </div>
-  </div>
-</article>
-   
-
-        <?php endwhile;
+        while ($related_photos->have_posts()) : $related_photos->the_post();
+            get_template_part('template-parts/photo-card');
+        endwhile;
         wp_reset_postdata();
-    else : ?>
-        <p>Aucune autre photo à afficher.</p>
-    <?php endif; ?>
+    else :
+        echo '<p>Aucune autre photo à afficher.</p>';
+    endif;
+    ?>
   </div>
 </section>
-
-
-
-
 </main>
 
 <?php get_footer(); ?>

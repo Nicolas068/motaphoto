@@ -1,4 +1,4 @@
-// Modal //
+
 
 // MODALE CONTACT
 document.addEventListener("DOMContentLoaded", function () {
@@ -84,4 +84,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// affichage photo front page 
 
+document.addEventListener("DOMContentLoaded", function () {
+  let page = 1; // variable locale, pas globale
+  const btn = document.querySelector('#load-more');
+  const grid = document.querySelector('#photo-grid');
+
+  if (!btn || !grid) return; // si pas de bouton ou de grille, on arrête
+
+  btn.addEventListener('click', () => {
+    page++;
+    const url = `${loadmore.ajaxurl}?action=load_more_photos&page=${page}`;
+    fetch(url)
+      .then(res => res.text())
+      .then(html => {
+        if (html.trim()) {
+          grid.insertAdjacentHTML('beforeend', html);
+        } else {
+          btn.style.display = 'none';
+        }
+      });
+  });
+});
