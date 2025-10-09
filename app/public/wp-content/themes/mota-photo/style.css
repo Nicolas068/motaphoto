@@ -432,44 +432,45 @@ header ul li a {
   width: 500px;
   height: 700px;
   object-fit: cover;
-  object-position: center bottom; /* colle bien en bas */
+  object-position: center bottom; 
   margin-right: 15%;
 }
 
 .photo-img.landscape {
-  width: 26vw;       /* même largeur que portrait */
+  width: 26vw;       
   height: auto;
   max-height: 50vh;
   object-fit: cover;
   object-position: center bottom;
-  margin-right: auto; /* colle le paysage à gauche */
+  margin-right: auto; 
   
 }
 
 .photo-img.portrait,
 .photo-img.landscape {
-  width: 450px;     /* même largeur */
+  width: 570px;     
   object-fit: cover;
   object-position: center bottom;
+  margin-right: 150px;
 }
 
 .photo-display.landscape {
-  align-items: flex-end; /* colle l’image en bas */
+  align-items: flex-end; 
 }
 
 .photo-display.portrait {
-  align-items: center;   /* centre l’image */
+  align-items: center;   
 }
 /* ----- Footer ----- */
 
 .photo-footer-wrapper {
-  width: 100%;               /* prend toute la largeur du site */
+  width: 100%;               
   position: relative;
 }
 
 .photo-footer {
   position: relative;
-  max-width: 700px; /* largeur max = image paysage */
+  max-width: 700px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -578,20 +579,6 @@ header ul li a {
 
 /* Photo apparentee */
 
-.photo-apparentees {
-  margin-top: 60px;
-  padding: 40px 0;
-}
-
-.titre-secondaire {
-  font-family: "Space Mono", monospace;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
 .photo-apparentees-grid {
   display: flex;
   justify-content: center;
@@ -599,28 +586,32 @@ header ul li a {
   flex-wrap: wrap;
 }
 
-.photo-item {
+/* Carte carrée */
+.photo-card {
   position: relative;
   width: 564px;
-  height: 495px;
+  height: 564px;
   overflow: hidden;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
+  background: #000;
 }
 
-.photo-item img {
-  width: auto;
+/* Image qui remplit tout le carré */
+.photo-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
+  display: block;
   transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 1;
 }
 
-/* Effet zoom léger */
-.photo-item:hover img {
+/* Effet zoom */
+.photo-card:hover img {
   transform: scale(1.05);
   opacity: 0.9;
 }
@@ -635,26 +626,179 @@ header ul li a {
   gap: 20px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 3;
 }
 
-/* Icônes visibles au survol */
-.photo-item:hover .photo-icons {
+.photo-card:hover .photo-icons {
   opacity: 1;
 }
 
-/* Apparence icônes */
 .photo-icons img {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   filter: brightness(0) invert(1);
+  top: 3px;
+  left: 3.5px;
 }
 
-/* Position spécifique de fullscreen */
 .photo-icons .icon-fullscreen {
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
+/* Titre + catégorie */
+.photo-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 80%);
+  box-sizing: border-box;
+  height: 70px;
+}
+
+.photo-card:hover .photo-info-overlay {
+  opacity: 1;
+}
+
+.photo-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.photo-info-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Affiche icônes + texte au survol */
+.photo-hover:hover .photo-icons,
+.photo-hover:hover .photo-info-overlay {
+  opacity: 1;
+}
+
+.photo-hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+/* ICON PHOTO */
+
+/* --- Icônes --- */
+.photo-icons {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.photo-icons a {
+  pointer-events: all;
+}
+
+/* Œil centré */
+.photo-icons .icon-eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.photo-icons .icon-fullscreen {
+  position: absolute;
+  top: -112px;
+  left: 350px;
+  transform: none;
+   background: rgba(0, 0, 0, 1); /* fond noir semi-transparent */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --- Titre + Catégorie alignés --- */
+.photo-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* centrage vertical exact sur la même ligne */
+  padding: 15px 20px;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 90%);
+  box-sizing: border-box;
+  height: 70px;
+}
+
+.photo-card:hover .photo-info-overlay {
+  opacity: 1;
+}
+
+/* Même style pour titre et catégorie */
+.photo-info-overlay .photo-title,
+.photo-info-overlay .photo-category {
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  line-height: 1;
+}
+
+
 
 
 /*Responsive page photo*/
@@ -818,9 +962,10 @@ header ul li a {
   font-style: italic;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 2px #fff; 
-  letter-spacing: 3px;
+  -webkit-text-stroke: 1px #fff; 
+  font-weight: 300;
 }
+
 
 /* ===== Filtres Galerie ===== */
 
@@ -903,5 +1048,53 @@ header ul li a {
 }
 
 
+/* a placer */
 
+.photo-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.photo-info-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Affiche icônes + texte au survol */
+.photo-hover:hover .photo-icons,
+.photo-hover:hover .photo-info-overlay {
+  opacity: 1;
+}
+
+.photo-hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
 

@@ -946,3 +946,86 @@ Stack trace:
 #3 {main}
   thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\single-photos.php on line 25
 [29-Sep-2025 08:32:01 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
+[07-Oct-2025 08:35:37 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\class-wp-customize-widgets.php on line 926
+[07-Oct-2025 09:17:26 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\front-page.php on line 56
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:24:51 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:25:01 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_url in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 3
+[08-Oct-2025 08:35:23 UTC] PHP Warning:  Undefined variable $thumb_id in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 9
+[08-Oct-2025 13:09:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php:12
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template.php(812): require()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template.php(745): load_template('C:\\Users\\nheim\\...', false, Array)
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\single-photo.php(150): get_template_part('template-parts/...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\nheim\\...')
+#5 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\nheim\\...')
+#6 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#7 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 12
+[08-Oct-2025 13:09:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php:12
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template.php(812): require()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template.php(745): load_template('C:\\Users\\nheim\\...', false, Array)
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\single-photo.php(150): get_template_part('template-parts/...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\nheim\\...')
+#5 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\nheim\\...')
+#6 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#7 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 12
+[08-Oct-2025 13:09:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php:12
+Stack trace:
+#0 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template.php(812): require()
+#1 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template.php(745): load_template('C:\\Users\\nheim\\...', false, Array)
+#2 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\single-photo.php(150): get_template_part('template-parts/...')
+#4 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\nheim\\...')
+#5 C:\Users\nheim\Local Sites\mota-photo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\nheim\\...')
+#6 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
+#7 {main}
+  thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 12

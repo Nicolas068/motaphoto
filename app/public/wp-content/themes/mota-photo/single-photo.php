@@ -37,6 +37,10 @@ get_header(); ?>
                 <p><strong>FORMAT :</strong> <?php echo esc_html($terms_format[0]->name); ?></p>
             <?php endif; ?>
 
+            <?php if ( !empty($type) ) : ?>
+                <p><strong>TYPE :</strong> <?php echo esc_html($type); ?></p>
+           <?php endif; ?>
+
             <?php if ( !empty($annee) ) : ?>
                 <p><strong>DATE :</strong> <?php echo esc_html($annee); ?></p>
             <?php endif; ?>

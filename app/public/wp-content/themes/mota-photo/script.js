@@ -86,30 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // affichage photo front page 
 
-document.addEventListener("DOMContentLoaded", function () {
-  let page = 1; // variable locale, pas globale
-  const btn = document.querySelector('#load-more');
-  const grid = document.querySelector('#photo-grid');
-
-  if (!btn || !grid) return; // si pas de bouton ou de grille, on arrête
-
-  btn.addEventListener('click', () => {
-    page++;
-    const url = `${loadmore.ajaxurl}?action=load_more_photos&page=${page}`;
-    fetch(url)
-      .then(res => res.text())
-      .then(html => {
-        if (html.trim()) {
-          grid.insertAdjacentHTML('beforeend', html);
-        } else {
-          btn.style.display = 'none';
-        }
-      });
-  });
-});
-
-// Filtre
-
 jQuery(document).ready(function($) {
   let page = 1;
   let currentFilters = {
@@ -135,27 +111,37 @@ jQuery(document).ready(function($) {
         if (reset) $('#photo-grid').css('opacity', '0.5');
       },
       success: function(response) {
-        if (reset) $('#photo-grid').html(response);
-        else $('#photo-grid').append(response);
-        $('#photo-grid').css('opacity', '1');
+        if (reset) {
+          $('#photo-grid').html(response);
+          $('#photo-grid').css('opacity', '1');
+          $('#load-more').show();        // réaffiche le bouton
+        } else {
+          if ($.trim(response) === '') {
+            $('#load-more').hide();      // plus de résultats
+          } else {
+            $('#photo-grid').append(response);
+          }
+        }
       }
     });
   }
 
-  // Filtres
+  // --- Filtres --- //
   $('#photo-filters select').on('change', function() {
     currentFilters = {
       categorie: $('#filter-categorie').val(),
       format: $('#filter-format').val(),
       ordre: $('#filter-ordre').val()
     };
-    page = 1;
-    loadPhotos(true);
+    page = 1;             // reset pagination
+    loadPhotos(true);     // recharge proprement
   });
 
-  // Charger plus
+  // --- Charger plus --- //
   $('#load-more').on('click', function(e) {
     e.preventDefault();
+
+    // si on vient juste d'appliquer un filtre, on veut d’abord charger la page 2
     page++;
     loadPhotos(false);
   });
