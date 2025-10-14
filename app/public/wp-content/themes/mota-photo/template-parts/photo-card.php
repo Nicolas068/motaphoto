@@ -24,6 +24,13 @@
       <span class="photo-category"><?php echo esc_html($terms_categorie[0]->name); ?></span>
     <?php endif; ?>
   </div>
+
+  <?php 
+$reference = SCF::get('reference'); // récupère la valeur depuis Smart Custom Fields
+if ($reference) : ?>
+  <span class="photo-ref" style="display:none;"><?php echo esc_html($reference); ?></span>
+<?php endif; ?>
+
 </article>
 
 

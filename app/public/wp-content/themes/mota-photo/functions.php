@@ -18,9 +18,21 @@ function motaphoto_enqueue_assets() {
         ['jquery'], // dépend de jQuery
         file_exists($script_file) ? filemtime($script_file) : '', // <-- corrigé
         true // dans le footer
+        
     );
+
+ // Script Lightbox
+    wp_enqueue_script(
+        'motaphoto-lightbox',
+        get_template_directory_uri() . '/assets/js/lightbox.js',
+        [],
+        filemtime(get_stylesheet_directory() . '/assets/js/lightbox.js'),
+        true
+    );
+
     wp_localize_script('motaphoto-script', 'loadmore', [
   'ajaxurl' => admin_url('admin-ajax.php')
+  
 ]);
 }
 add_action('wp_enqueue_scripts', 'motaphoto_enqueue_assets');

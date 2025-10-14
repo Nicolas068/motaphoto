@@ -10,7 +10,7 @@ get_header(); ?>
     <?php if ( have_posts() ) : ?>
         <div class="photo-grid">
             <?php while ( have_posts() ) : the_post(); ?>
-                <div class="photo-item">
+                <div class="photo-card">
                     <a href="<?php the_permalink(); ?>">
                         <?php if ( has_post_thumbnail() ) {
                             the_post_thumbnail('medium');

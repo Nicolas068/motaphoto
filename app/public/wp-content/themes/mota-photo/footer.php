@@ -5,6 +5,30 @@
   </div>
 </div>
 
+<!-- Lightbox -->
+ 
+<div id="lightbox" class="lightbox">
+  <div class="lightbox-overlay"></div>
+
+  <div class="lightbox-content">
+    <button class="lightbox-close">&times;</button>
+
+    <div class="lightbox-image-container">
+      <img id="lightbox-image" src="" alt="">
+    </div>
+
+    <div class="lightbox-nav">
+      <button id="lightbox-prev" class="nav-btn">← Précédente</button>
+      <button id="lightbox-next" class="nav-btn">Suivante →</button>
+    </div>
+
+    <div class="lightbox-info">
+      <span id="lightbox-ref" class="lightbox-ref"></span>
+      <span id="lightbox-cat" class="lightbox-cat"></span>
+    </div>
+  </div>
+</div>
+
 
 <!-- footer -->
 
