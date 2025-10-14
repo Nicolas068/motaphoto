@@ -10,7 +10,6 @@ Text Domain: mota-photo
 */
 
 /* POLICE */
-
 @font-face {
   font-family: "Poppins";
   src: url("assets/fonts/SpaceMono-Regular.woff2") format("woff2");
@@ -19,7 +18,6 @@ Text Domain: mota-photo
   font-display: swap;
 }
 
-/* Space Mono Regular */
 @font-face {
   font-family: "Space Mono";
   src: url("assets/fonts/SpaceMono-Regular.woff2") format("woff2");
@@ -29,12 +27,12 @@ Text Domain: mota-photo
 }
 
 body {
-  max-width: 1400px;   /* limite globale */
-  margin: 0 auto;      /* centre tout */
-  padding: 0 40px;     /* espace blanc partout sur les côtés */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-/* header */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between; 
@@ -45,119 +43,43 @@ header {
 .logo-img {
   max-height: 80px; 
   height: 14px;
-  width: 216 px;
-  margin-top:  0px;
+  width: 216px;
+  margin-top: 0;
 }
 
 header ul {
   list-style: none;
   display: flex;
   gap: 20px; 
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 header ul li a {
   text-decoration: none;
   color: black;
   font-size: 16px;
-  position:relative;
-  right:100px;
+  position: relative;
+  right: 30px;
+  top: 10px;
 }
 
-/* Menu mobile */
 .menu-toggle {
   display: none;
 }
 
-@media (max-width: 768px) {
-  #site-header {
-    flex-direction: column;
-    align-items: stretch;
-    position: relative; /* le menu s’aligne sous le header */
-    z-index: 1000;
-  }
-
-  .header-top {
-    display: flex;
-    justify-content: center;  /* centre logo et hamburger */
-    align-items: center;
-    position: relative;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .logo-img {
-    height: 10px;
-    max-height: 14px;
-    margin-right: 80px; 
-  }
-
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    right: -94px; /* hamburger à droite */
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    
-  }
-
-  /* Menu caché */
-  .my-menu-principal {
-    max-height: 0;           /* caché au départ */
-    overflow: hidden;        /* cache le contenu */
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 100%;               /* sous header */
-    left: 0;
-    right: 0;
-    padding: 0 20px;         /* padding horizontal seulement */
-    border-top: 1px solid #ddd;
-    box-sizing: border-box;
-    transition: max-height 0.4s ease; /* animation slide */
-  }
-
-  /* Menu actif */
-  .my-menu-principal.active {
-    max-height: 500px; /* assez grand pour afficher tous les liens */
-    padding: 20px;
-  }
-
-  .my-menu-principal li {
-    margin: 15px 0;
-    list-style: none;
-    text-align: center; /* centre chaque item */
-  }
-
-  
-  .my-menu-principal li a {
-    display: inline-block; /* largeur = largeur du texte */
-    padding: 5px 10px;     /* petit espace autour du texte */
-    margin-left: 55%;
-    font-size: 20px;
-    color: #000;
-    text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease; /* effet doux */
-  }
-
-  .my-menu-principal li a:hover {
-    color:#2f2f2f ; 
-  }
-}
-
-/* footer */
+/* FOOTER */
 .my-footer-menu {
-    list-style: none;
+  list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 60px;
   justify-content: center;
-  align-items: center;  /* centre verticalement */
-  text-align: center;   /* centre le texte sur plusieurs lignes */
-  padding: 0;
-  margin: 50px;
-  flex-wrap: wrap;      /* évite les décalages sur petits écrans */
+  align-items: center;
+  text-align: center;
+  padding: 20px 0 0;
+  margin: 0;
+  flex-wrap: wrap;
+  border-top: 1px solid #000;
+  margin-top: 40px;
 }
 
 .my-footer-menu li a {
@@ -165,23 +87,14 @@ header ul li a {
   text-decoration: none;
   font-size: 16px;
   transition: background 0.3s ease, color 0.3s ease;
+  padding-bottom: 20px;
 }
 
 .my-footer-menu li a:hover {
   color: #2f2f2f;
 }
 
-/* --- Responsive : footer en colonne --- */
-@media (max-width: 768px) {
-  .my-footer-menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-}
-         /* MODALE */
-
-/* Overlay */
+/* MODALE */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -189,15 +102,14 @@ header ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6); /* fond assombri */
+  background: rgba(0,0,0,0.6);
   z-index: 9999;
 }
 
-/* Boîte du modal */
 .modal-content {
   position: relative;
   width: 597px;
-  max-height: 92vh; /* sécurité : jamais plus haut que 90% de l'écran */
+  max-height: 97vh;
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
@@ -206,10 +118,8 @@ header ul li a {
   box-sizing: border-box;
   overflow: hidden;
   padding-bottom: 20px;
-  
 }
 
-/* Bouton fermeture */
 .modal-close {
   position: absolute;
   top: 15px;
@@ -221,21 +131,19 @@ header ul li a {
   z-index: 10;
 }
 
-/* Texte géant en fond */
 .modal-content::before {
   content: "TACTCONTACTCON\A NTACTCONTACTCO";
   position: absolute;
   font-family: "Space Mono", monospace;
   font-style: italic;
-  font-weight: 400; /* pas en gras */
+  font-weight: 400;
   font-size: 5rem;
-  color: #000; /* couleur pleine */
-  white-space: pre-line; /* retour à la ligne avec \A */
+  color: #000;
+  white-space: pre-line;
   line-height: 1;
   z-index: 1;
 }
 
-/* Formulaire CF7 */
 .modal-content .wpcf7-form {
   text-align: center;
   position: relative;
@@ -246,59 +154,51 @@ header ul li a {
   color: #111;
 }
 
-/* Labels */
 .modal-content .wpcf7-form label {
   display: block;
-  width: 273px;       /* même largeur que les champs */
-  margin: 10px auto 5px;  /* auto pour centrer */
+  width: 273px;
+  margin: 10px auto 5px;
   font-size: 0.85rem;
-  font-weight: 400;   /* pas gras */
-  text-align: left;   /* texte aligné au début du champ */
+  font-weight: 400;
+  text-align: left;
   letter-spacing: 0.5px;
 }
 
-
-/* Champs simples (Nom, Email, Réf.) */
 .modal-content .wpcf7-form input[type="text"],
 .modal-content .wpcf7-form input[type="email"],
 .modal-content .wpcf7-form input[type="tel"],
 .modal-content .wpcf7-form input[type="url"],
 .modal-content .wpcf7-form input[type="number"] {
   width: 273px;
-  height: 63px;       /* ✅ hauteur fixe */
+  height: 63px;
   margin: 10px auto;
   display: block;
   padding: 0 12px;
   font-size: 0.95rem;
-  font-weight: 400;
   border-radius: 4px;
   border: 1px solid #333;
   box-sizing: border-box;
 }
 
-/* Champ message (textarea) */
 .modal-content .wpcf7-form textarea {
   width: 273px;
-  height: 210px;      /* ✅ hauteur fixe */
+  height: 210px;
   margin: 10px auto;
   display: block;
   padding: 12px;
   font-size: 0.95rem;
-  font-weight: 400;
   border-radius: 4px;
   border: 1px solid #333;
   box-sizing: border-box;
   resize: none;
 }
 
-/* Bouton envoyer */
 .modal-content .wpcf7-form input[type="submit"] {
   width: 273px;
-  height: 63px;       /* bouton harmonisé */
+  height: 63px;
   margin: 10px auto 20px;
   display: block;
   font-size: 1rem;
-  font-weight: 400;   /* pas gras */
   letter-spacing: 1px;
   border: none;
   border-radius: 4px;
@@ -310,84 +210,15 @@ header ul li a {
 
 .modal-content .wpcf7-form input[type="submit"]:hover {
   background: #E00000;
-  ;
 }
 
-/* --- Media Queries pour petits écrans --- */
-/* --- Responsive complément modal --- */
-@media (max-width: 768px) {
-  .modal-content {
-    width: 90%;
-    padding: 15px 10px 20px;
-  }
-
-  .modal-content::before {
-    font-size: 3rem;     /* réduire le texte géant */
-    line-height: 1.1;    /* garder la densité */
-    left: 2%;
-    top: 5%;
-  }
-
-  .modal-content .wpcf7-form {
-    margin-top: 100px;
-  }
-
-  /* Champs et bouton prennent toute la largeur dispo */
-  .modal-content .wpcf7-form input[type="text"],
-  .modal-content .wpcf7-form input[type="email"],
-  .modal-content .wpcf7-form input[type="tel"],
-  .modal-content .wpcf7-form input[type="url"],
-  .modal-content .wpcf7-form input[type="number"],
-  .modal-content .wpcf7-form textarea,
-  .modal-content .wpcf7-form input[type="submit"] {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .modal-content .wpcf7-form input[type="submit"] {
-    width: 85%;         /* bouton moins large */
-    max-width: 240px;   /* garde une limite */
-    height: 50px;
-    font-size: 0.95rem;
-    margin: 15px auto;  /* bien centré */
-  }
-}
-
-@media (max-width: 480px) {
-  .modal-content {
-    width: 95%;
-    border-width: 2px;
-  }
-
-  .modal-content::before {
-    font-size: 3rem;     /* encore plus petit sur mobile */
-    line-height: 1.1;
-    top: 1%;
-  }
-
-  .modal-close {
-    font-size: 20px;
-    top: 8px;
-    right: 10px;
-  }
-  .modal-content .wpcf7-form input[type="submit"] {
-    width: 90%;         /* encore plus réduit */
-    height: 45px;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    margin: 12px auto;
-  }
-
-}
-
-           /* CONTENU PHOTO */
-/* ----- Mise en page principale ----- */
+/* CONTENU PHOTO */
 .photo-layout {
   display: flex;
-  align-items: flex-end; /* aligne les 2 colonnes en bas */
+  align-items: flex-end;
   justify-content: space-between;
 }
-/* Colonne gauche = Infos */
+
 .photo-infos {
   width: 50%;
   padding: 40px;
@@ -395,7 +226,7 @@ header ul li a {
   font-family: "Space Mono", monospace;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Infos alignées en bas */
+  justify-content: flex-end;
   height: 100%;
   margin-left: 40px;
 }
@@ -416,13 +247,11 @@ header ul li a {
   font-family: "Space Mono", monospace;
 }
 
-/* Colonne droite = Photo */
 .photo-display {
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* colle l’image en bas */
+  align-items: flex-end;
 }
-
 
 .photo-display img {
   display: block;
@@ -432,77 +261,86 @@ header ul li a {
   width: 500px;
   height: 700px;
   object-fit: cover;
-  object-position: center bottom; 
+  object-position: center bottom;
   margin-right: 15%;
 }
 
 .photo-img.landscape {
-  width: 26vw;       
+  width: 26vw;
   height: auto;
   max-height: 50vh;
   object-fit: cover;
   object-position: center bottom;
-  margin-right: auto; 
-  
+  margin-right: auto;
 }
 
 .photo-img.portrait,
 .photo-img.landscape {
-  width: 570px;     
+  width: 570px;
   object-fit: cover;
   object-position: center bottom;
   margin-right: 150px;
 }
 
 .photo-display.landscape {
-  align-items: flex-end; 
+  align-items: flex-end;
 }
 
 .photo-display.portrait {
-  align-items: center;   
+  align-items: center;
 }
-/* ----- Footer ----- */
+
+/* FOOTER */
+.titre-secondaire {
+  margin-left: 36px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  font-weight: 400;
+}
 
 .photo-footer-wrapper {
-  width: 100%;               
+  width: 100%;
   position: relative;
 }
 
 .photo-footer {
   position: relative;
-  max-width: 700px; 
+  max-width: 700px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .photo-footer::before {
   content: "";
   position: absolute;
   top: 0;
-  right: 34px; /* reste bien calé à droite */
+  right: 34px;
   height: 1px;
   background: #000;
-  width: calc(100% - 72px); /* raccourci de 50px à gauche */
+  width: calc(100% - 72px);
 }
 
 .photo-footer-wrapper::after {
   content: "";
   display: block;
-  width: 82%;            /* largeur du trait (réduit) */
-  height: 1px; 
+  width: 87%;
+  height: 1px;
   background: #000;
   margin-left: 34px;
   margin-top: 30px;
 }
 
-/* Zone contact */
+/* ZONE CONTACT */
 .photo-contact {
-   display: flex;
+  display: flex;
   align-items: center;
-  justify-content: space-between; /* espace entre gauche - milieu - droite */
-  width: 100%; /* occupe toute la largeur */
+  justify-content: space-between;
+  width: 100%;
   padding-top: 10px;
-  margin-left: 70px; /* on annule le décalage */
+  margin-left: 70px;
 }
 
 .photo-contact p {
@@ -510,9 +348,8 @@ header ul li a {
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-top: 50px;
-  position:relative;
+  position: relative;
   top: -1.5vh;
-
 }
 
 .btn-contact {
@@ -521,18 +358,17 @@ header ul li a {
   text-decoration: none;
   color: #000;
   text-transform: none;
-  font-size: 1vw;   
+  font-size: 1vw;
   border-radius: 0.3vw;
   transition: background 0.3s ease;
-  width: 16vw;   
-  height: 5vh;   
-  display: flex;              
-  justify-content: center;    
-  align-items: center;   
+  width: 16vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   left: 3vw;
-  top: 1.5vh
-  ;
+  top: 1.5vh;
 }
 
 .btn-contact:hover {
@@ -540,7 +376,7 @@ header ul li a {
   color: #fff;
 }
 
-/* Navigation */
+/* NAVIGATION */
 .photo-navigation {
   display: flex;
   gap: 20px;
@@ -558,27 +394,25 @@ header ul li a {
 }
 
 .photo-navigation a::after {
-  position: absolute;        /* fixé à l’écran */
-  top: 50%;               /* centré verticalement */
-  right: 20px;            /* distance du bord droit */
+  position: absolute;
+  top: 50%;
+  right: 20px;
   transform: translateY(-50%);
   width: 80px;
   height: 80px;
   background-size: cover;
   background-position: center;
   border: 1px solid #ccc;
-  display: none;          /* invisible par défaut */
+  display: none;
   z-index: 2000;
 }
 
-
 .photo-navigation a:hover::after {
   display: block;
-  background-image: attr(data-thumb url); /* affiche la miniature du lien */
+  background-image: attr(data-thumb url);
 }
 
-/* Photo apparentee */
-
+/* PHOTOS APPARENTEES */
 .photo-apparentees-grid {
   display: flex;
   justify-content: center;
@@ -586,7 +420,6 @@ header ul li a {
   flex-wrap: wrap;
 }
 
-/* Carte carrée */
 .photo-card {
   position: relative;
   width: 564px;
@@ -596,7 +429,6 @@ header ul li a {
   background: #000;
 }
 
-/* Image qui remplit tout le carré */
 .photo-card img {
   position: absolute;
   top: 0;
@@ -610,13 +442,7 @@ header ul li a {
   z-index: 1;
 }
 
-/* Effet zoom */
-.photo-card:hover img {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* Icônes */
+/* ICONES */
 .photo-icons {
   position: absolute;
   inset: 0;
@@ -637,8 +463,8 @@ header ul li a {
   width: 32px;
   height: 32px;
   filter: brightness(0) invert(1);
-  top: 3px;
-  left: 3.5px;
+  top: 7px;
+  left: 8.5px;
 }
 
 .photo-icons .icon-fullscreen {
@@ -647,7 +473,6 @@ header ul li a {
   right: 10px;
 }
 
-/* Titre + catégorie */
 .photo-info-overlay {
   position: absolute;
   bottom: 0;
@@ -674,249 +499,7 @@ header ul li a {
   opacity: 1;
 }
 
-.photo-hover {
-  position: relative;
-  overflow: hidden;
-}
-
-.photo-icons {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 15px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 3;
-}
-
-.photo-info-overlay {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  padding: 0 12px;
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  font-family: "Space Mono", monospace;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Affiche icônes + texte au survol */
-.photo-hover:hover .photo-icons,
-.photo-hover:hover .photo-info-overlay {
-  opacity: 1;
-}
-
-.photo-hover img {
-  display: block;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-/* ICON PHOTO */
-
-/* --- Icônes --- */
-.photo-icons {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.photo-icons a {
-  pointer-events: all;
-}
-
-/* Œil centré */
-.photo-icons .icon-eye {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.photo-icons .icon-fullscreen {
-  position: absolute;
-  top: -112px;
-  left: 350px;
-  transform: none;
-   background: rgba(0, 0, 0, 1); /* fond noir semi-transparent */
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* --- Titre + Catégorie alignés --- */
-.photo-info-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* centrage vertical exact sur la même ligne */
-  padding: 15px 20px;
-  color: #fff;
-  font-family: "Space Mono", monospace;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-  pointer-events: none;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 90%);
-  box-sizing: border-box;
-  height: 70px;
-}
-
-.photo-card:hover .photo-info-overlay {
-  opacity: 1;
-}
-
-/* Même style pour titre et catégorie */
-.photo-info-overlay .photo-title,
-.photo-info-overlay .photo-category {
-  font-family: "Space Mono", monospace;
-  font-size: 0.9rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  margin: 0;
-  line-height: 1;
-}
-
-
-
-
-/*Responsive page photo*/
-
-/* ========================= */
-/*       RESPONSIVE          */
-/* ========================= */
-
-/* --- Tablette --- */
-@media (max-width: 1024px) {
-  .photo-layout {
-    flex-direction: column; /* infos en haut, photo en bas */
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .photo-infos {
-    width: 100%;
-    margin-left: 0;
-    padding: 20px;
-    align-items: center;
-  }
-
-  .photo-title {
-    font-size: 3rem;
-    line-height: 1.2;
-  }
-
-  .photo-img.portrait,
-  .photo-img.landscape {
-    width: 70%;
-    max-width: 400px;
-    margin: 20px auto 0;
-  }
-
-  .btn-contact {
-    font-size: 1rem;
-    width: 200px;
-    height: 45px;
-    left: 0;
-    top: 0;
-    margin-top: 20px;
-  }
-
-  .photo-navigation {
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-  }
-
-  .photo-navigation a {
-    position: static; /* plus de position forcée */
-    font-size: 0.9rem;
-  }
-}
-
-/* --- Mobile --- */
-@media (max-width: 768px) {
-  .photo-title {
-    font-size: 2.2rem;
-  }
-
-  .photo-infos p {
-    font-size: 0.85rem;
-  }
-
-  .photo-img.portrait,
-  .photo-img.landscape {
-    width: 90%;
-    max-width: 320px;
-  }
-
-  .photo-contact {
-    flex-direction: column;
-    margin-left: 0;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .btn-contact {
-    width: 70%;
-    font-size: 0.9rem;
-  }
-
-  .photo-footer-wrapper::after {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* --- Très petit mobile --- */
-@media (max-width: 480px) {
-  .photo-title {
-    font-size: 1.6rem;
-    line-height: 1.1;
-  }
-
-  .photo-img.portrait,
-  .photo-img.landscape {
-    max-width: 250px;
-  }
-
-  .btn-contact {
-    width: 90%;
-    font-size: 0.85rem;
-    height: 40px;
-  }
-
-  .photo-navigation {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-/* --- Hero --- */
-
+/* HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -939,22 +522,6 @@ header ul li a {
   z-index: 1;
 }
 
-.hero {
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
 .hero-title {
   position: relative;
   font-family: "Space Mono", monospace;
@@ -962,20 +529,17 @@ header ul li a {
   font-style: italic;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1px #fff; 
+  -webkit-text-stroke: 1px #fff;
   font-weight: 300;
 }
 
-
-/* ===== Filtres Galerie ===== */
-
-/* ===== Filtres alignés avec la galerie ===== */
+/* FILTRES GALERIE */
 .photo-filtres {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1200px; /* même largeur que la galerie */
+  max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -1000,7 +564,6 @@ header ul li a {
   margin-right: 25px;
 }
 
-/* Style des select */
 #photo-filters select {
   font-family: "Space Mono", monospace;
   font-size: 1rem;
@@ -1029,81 +592,7 @@ header ul li a {
   border-color: #000;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .photo-filtres {
-    justify-content: center;
-  }
-
-  #photo-filters {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .filter-left,
-  .filter-right {
-    justify-content: center;
-    width: 100%;
-  }
-}
-
-
-/* a placer */
-
-.photo-hover {
-  position: relative;
-  overflow: hidden;
-}
-
-.photo-icons {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 15px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 3;
-}
-
-.photo-info-overlay {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  padding: 0 12px;
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  font-family: "Space Mono", monospace;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Affiche icônes + texte au survol */
-.photo-hover:hover .photo-icons,
-.photo-hover:hover .photo-info-overlay {
-  opacity: 1;
-}
-
-.photo-hover img {
-  display: block;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-/* Lightbox */
-
-/* ===================== */
-/* LIGHTBOX AJUSTÉE      */
-/* ===================== */
-
+/* LIGHTBOX */
 .lightbox {
   display: none;
   position: fixed;
@@ -1118,7 +607,6 @@ header ul li a {
   display: flex;
 }
 
-/* Conteneur principal */
 .lightbox-content {
   position: relative;
   display: flex;
@@ -1129,7 +617,6 @@ header ul li a {
   max-height: 90vh;
 }
 
-/* Image toujours visible entière */
 .lightbox-image-container {
   display: flex;
   justify-content: center;
@@ -1145,11 +632,10 @@ header ul li a {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 90vh; /* image entière dans la fenêtre */
+  max-height: 90vh;
   object-fit: contain;
 }
 
-/* Croix fermeture */
 .lightbox-close {
   position: fixed;
   top: 40px;
@@ -1162,7 +648,6 @@ header ul li a {
   z-index: 10001;
 }
 
-/* Boutons navigation */
 .nav-btn {
   position: fixed;
   top: 50%;
@@ -1185,11 +670,9 @@ header ul li a {
   right: 60px;
 }
 
-
-/* Infos sous la photo */
 .lightbox-info {
   position: absolute;
-  bottom: -40px; /* distance entre le bas de la photo et les infos */
+  bottom: -40px;
   left: 0;
   width: 100%;
   display: flex;
@@ -1210,11 +693,340 @@ header ul li a {
   text-align: right;
 }
 
-/* Ajustement responsive */
+/* BOUTON CHARGER PLUS */
+#load-more {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #d8d8d8;
+  color: #000;
+  border: none;
+  border-radius: 2px;
+  padding: 14px 80px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+#load-more:hover {
+  background: #000;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+#load-more:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.no-more-photos {
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+/* Conteneur des icônes */
+.photo-icons {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Liens cliquables */
+.photo-icons a {
+  pointer-events: all;
+}
+
+/* Icône œil centré parfaitement */
+.photo-icons .icon-eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+
+/* Icône plein écran en haut à droite avec fond noir circulaire */
+.photo-icons .icon-fullscreen {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-icons .icon-fullscreen img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) invert(1);
+}
+
+/* Overlay bas : titre + catégorie même taille et alignés */
+.photo-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;          /* même taille pour titre et catégorie */
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 90%);
+  box-sizing: border-box;
+  height: 70px;
+}
+
+/* Activation au survol */
+.photo-card:hover .photo-icons,
+.photo-card:hover .photo-info-overlay {
+  opacity: 1;
+}
+
+.photo-info-overlay .photo-title {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* ===================== */
+/* === RESPONSIVE CSS === */
+/* ===================== */
+
+/* ----------- HEADER + MENU ----------- */
 @media (max-width: 768px) {
-  .lightbox-info {
-    bottom: -30px;
-    font-size: 0.8rem;
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+
+  .logo-img {
+    width: 160px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Bouton hamburger */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    z-index: 1001;
+  }
+
+  /* Menu principal caché au départ */
+  .my-menu-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #000;
+    transition: max-height 0.4s ease;
+  }
+
+  /* Menu visible (JS ajoutera .active) */
+  .my-menu-principal.active {
+    max-height: 400px;
+    padding: 20px 0;
+  }
+
+  .my-menu-principal li {
+    list-style: none;
+    margin: 12px 0;
+  }
+
+  .my-menu-principal li a {
+    color: #000;
+    font-family: "Space Mono", monospace;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+}
+
+/* ----------- HERO ----------- */
+@media (max-width: 768px) {
+  .hero {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-title {
+    font-size: 8vw;
+    white-space: nowrap;
+    text-align: center;
   }
 }
 
+/* ----------- GALERIE ----------- */
+@media (max-width: 768px) {
+  .photo-apparentees-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .photo-card {
+    width: 90vw;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #load-more {
+    width: 80%;
+    max-width: 320px;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+/* ----------- MODALE ----------- */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 20px 10px;
+    border-width: 2px;
+  }
+
+  .modal-content::before {
+    font-size: 3rem;
+    top: 5%;
+    left: 3%;
+  }
+
+  .modal-content .wpcf7-form {
+    margin-top: 100px;
+  }
+
+  .modal-content .wpcf7-form input,
+  .modal-content .wpcf7-form textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-content .wpcf7-form input[type="submit"] {
+    width: 85%;
+    max-width: 240px;
+    height: 50px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ----------- FOOTER ----------- */
+@media (max-width: 768px) {
+  .my-footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .my-footer-menu li {
+    margin: 6px 0;
+  }
+}
+
+/* ----------- TRES PETITS MOBILES ----------- */
+@media (max-width: 480px) {
+  .hero {
+    height: 45vh;
+  }
+
+  .hero-title {
+    font-size: 10vw;
+  }
+
+  .photo-card {
+    width: 92vw;
+  }
+
+  #load-more {
+    width: 90%;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+
+/* ----------- PHOTO LAYOUT (mobile) ----------- */
+@media (max-width: 768px) {
+  .photo-layout {
+    flex-direction: column;         /* empile les éléments */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .photo-display {
+    order: 1;                       /* image en premier */
+    margin: 0 auto 20px auto;
+  }
+
+  .photo-infos {
+    order: 2;                       /* infos après l’image */
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .photo-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .photo-infos p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+}

@@ -121,6 +121,8 @@ function motaphoto_filter_photos() {
   endif;
 
   wp_die();
+  
 }
 add_action('wp_ajax_filter_photos', 'motaphoto_filter_photos');
 add_action('wp_ajax_nopriv_filter_photos', 'motaphoto_filter_photos');
+
