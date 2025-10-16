@@ -1,19 +1,25 @@
-// ==================== MODALE CONTACT ====================
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("contact-modal");
   if (!modal) return;
 
   let currentRef = "";
+
+ // récupère la ref sauf sur la page d'accueil (home ou front-page)
+if (
+  !document.body.classList.contains("home") &&
+  !document.body.classList.contains("front-page")
+) {
   const photoRef = document.querySelector(".photo-ref");
   if (photoRef) currentRef = photoRef.textContent.trim();
+}
 
-  // Transforme tous les liens vers /contact/ en déclencheurs
+  // transforme les liens contact en déclencheurs
   document.querySelectorAll('a[href*="contact"]').forEach(link => {
     link.classList.add("open-contact");
     link.setAttribute("href", "#");
   });
 
-  // Ouvre la modale
+  // ouvre la modale
   document.querySelectorAll(".open-contact").forEach(btn => {
     btn.addEventListener("click", e => {
       e.preventDefault();
@@ -24,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Ferme la modale en cliquant à l’extérieur
+  // ferme en cliquant à l’extérieur
   window.addEventListener("click", e => {
     if (e.target === modal) modal.style.display = "none";
   });
@@ -125,43 +131,54 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function initLoadMore() {
-    const btn = document.querySelector('#load-more');
-    const grid = document.querySelector('#photo-grid');
-    if (!btn || !grid || typeof loadmore === 'undefined') return;
+  const btn = document.querySelector('#load-more');
+  const grid = document.querySelector('#photo-grid');
+  if (!btn || !grid || typeof loadmore === 'undefined') return;
 
-    // évite les doublons d’écouteurs
-    const newBtn = btn.cloneNode(true);
-    btn.parentNode.replaceChild(newBtn, btn);
+  const newBtn = btn.cloneNode(true);
+  btn.parentNode.replaceChild(newBtn, btn);
 
-    newBtn.addEventListener('click', function () {
-      newBtn.disabled = true;
-      newBtn.textContent = 'Chargement...';
+  newBtn.addEventListener('click', function () {
+    newBtn.disabled = true;
+    newBtn.textContent = 'Chargement...';
 
-      const url = `${loadmore.ajaxurl}?action=load_more_photos&page=${page + 1}`;
+    const data = new URLSearchParams({
+      action: 'filter_photos',
+      page: page + 1,
+      categorie: currentFilters.categorie || '',
+      format: currentFilters.format || '',
+      ordre: currentFilters.ordre || 'DESC'
+    });
 
-      fetch(url, { credentials: 'same-origin' })
-        .then(res => res.text())
-        .then(html => {
-          const data = html.trim();
-          if (data !== '') {
-            grid.insertAdjacentHTML('beforeend', data);
-            page++;
-            newBtn.disabled = false;
-            newBtn.textContent = 'Charger plus';
-          } else {
-            newBtn.remove();
-            if (!$('.no-more-photos').length) {
-              $('.load-more-container').append('<p class="no-more-photos">Aucune photo trouvée.</p>');
-            }
-          }
-        })
-        .catch(err => {
-          console.error('Erreur AJAX :', err);
+    fetch(loadmore.ajaxurl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: data,
+      credentials: 'same-origin'
+    })
+      .then(res => res.text())
+      .then(html => {
+        const content = html.trim();
+        if (content !== '' && !content.includes('Aucune photo')) {
+          grid.insertAdjacentHTML('beforeend', content);
+          page++;
           newBtn.disabled = false;
           newBtn.textContent = 'Charger plus';
-        });
-    });
-  }
+        } else {
+          newBtn.remove();
+          if (!$('.no-more-photos').length) {
+            $('.load-more-container').append('<p class="no-more-photos">Aucune photo trouvée.</p>');
+          }
+        }
+      })
+      .catch(err => {
+        console.error('Erreur AJAX :', err);
+        newBtn.disabled = false;
+        newBtn.textContent = 'Charger plus';
+      });
+  });
+}
+
 
   // filtres
   $('#photo-filters select').on('change', function () {

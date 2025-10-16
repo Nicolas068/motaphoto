@@ -1029,3 +1029,4 @@ Stack trace:
 #6 C:\Users\nheim\Local Sites\mota-photo\app\public\index.php(17): require('C:\\Users\\nheim\\...')
 #7 {main}
   thrown in C:\Users\nheim\Local Sites\mota-photo\app\public\wp-content\themes\mota-photo\template-parts\photo-card.php on line 12
+[16-Oct-2025 06:17:53 UTC] Erreur d’événement de replanification de tâche pour le crochet wp_update_user_counts. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"twicedaily","args":[],"interval":43200}

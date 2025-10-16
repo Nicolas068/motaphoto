@@ -6,7 +6,7 @@
         <title>Mota Photo</title>
 <?php wp_head(); ?>
     </head>
-<body>
+<body <?php body_class(); ?>>
     <header id="site-header">
         <div class="header-top">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-img">
