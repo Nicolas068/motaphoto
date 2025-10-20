@@ -26,7 +26,7 @@
   </div>
 
   <?php 
-$reference = SCF::get('reference'); // récupère la valeur depuis Smart Custom Fields
+$reference = SCF::get('reference'); 
 if ($reference) : ?>
   <span class="photo-ref" style="display:none;"><?php echo esc_html($reference); ?></span>
 <?php endif; ?>

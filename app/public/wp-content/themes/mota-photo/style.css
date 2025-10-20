@@ -672,11 +672,11 @@ header ul li a {
 }
 
 #lightbox-prev {
-  left: 200px;
+  left: 160px;
 }
 
 #lightbox-next {
-  right: 200px;
+  right: 160px;
 }
 
 .lightbox-info {

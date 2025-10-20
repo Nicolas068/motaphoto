@@ -7,7 +7,7 @@ function motaphoto_enqueue_assets() {
         'motaphoto-style',
         get_stylesheet_uri(),
         [],
-        file_exists($style_file) ? filemtime($style_file) : '' // <-- corrigé
+        file_exists($style_file) ? filemtime($style_file) : '' 
     );
 
     // Charger script.js
@@ -16,7 +16,7 @@ function motaphoto_enqueue_assets() {
         'motaphoto-script',
         get_stylesheet_directory_uri() . '/script.js',
         ['jquery'], // dépend de jQuery
-        file_exists($script_file) ? filemtime($script_file) : '', // <-- corrigé
+        file_exists($script_file) ? filemtime($script_file) : '', 
         true // dans le footer
         
     );
@@ -40,7 +40,7 @@ add_action('wp_enqueue_scripts', 'motaphoto_enqueue_assets');
 // Ajouter les menus
 function register_my_menus() {
     register_nav_menus([
-        'menu-principal' => __( 'Menu Principal' ), // menu du header
+        'menu-principal' => __( 'Menu Principal' ), 
         'footer-menu'    => __( 'Menu Footer' ),
     ]);
 }

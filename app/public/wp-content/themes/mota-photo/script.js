@@ -87,6 +87,22 @@ document.addEventListener("DOMContentLoaded", () => {
   let page = 1;
   let currentFilters = { categorie: '', format: '', ordre: 'DESC' };
 
+  // --- Lightbox réactive automatiquement sur contenu dynamique ---
+  $(document).on('click', '.icon-fullscreen', function (e) {
+    e.preventDefault();
+    const link = $(this).attr('href');
+    const container = $(this).closest('.photo-card, .photo-item');
+    const ref = container.find('.photo-ref').text().trim();
+    const cat = container.find('.photo-category').text().trim();
+
+    const lightbox = $('#lightbox');
+    lightbox.find('#lightbox-image').attr('src', link);
+    lightbox.find('#lightbox-ref').text(ref ? `Réf : ${ref}` : '');
+    lightbox.find('#lightbox-cat').text(cat);
+    lightbox.addClass('active');
+  });
+
+  // --- Chargement AJAX ---
   function loadPhotos(reset = false) {
     const data = {
       action: 'filter_photos',
@@ -131,56 +147,55 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function initLoadMore() {
-  const btn = document.querySelector('#load-more');
-  const grid = document.querySelector('#photo-grid');
-  if (!btn || !grid || typeof loadmore === 'undefined') return;
+    const btn = document.querySelector('#load-more');
+    const grid = document.querySelector('#photo-grid');
+    if (!btn || !grid || typeof loadmore === 'undefined') return;
 
-  const newBtn = btn.cloneNode(true);
-  btn.parentNode.replaceChild(newBtn, btn);
+    const newBtn = btn.cloneNode(true);
+    btn.parentNode.replaceChild(newBtn, btn);
 
-  newBtn.addEventListener('click', function () {
-    newBtn.disabled = true;
-    newBtn.textContent = 'Chargement...';
+    newBtn.addEventListener('click', function () {
+      newBtn.disabled = true;
+      newBtn.textContent = 'Chargement...';
 
-    const data = new URLSearchParams({
-      action: 'filter_photos',
-      page: page + 1,
-      categorie: currentFilters.categorie || '',
-      format: currentFilters.format || '',
-      ordre: currentFilters.ordre || 'DESC'
-    });
+      const data = new URLSearchParams({
+        action: 'filter_photos',
+        page: page + 1,
+        categorie: currentFilters.categorie || '',
+        format: currentFilters.format || '',
+        ordre: currentFilters.ordre || 'DESC'
+      });
 
-    fetch(loadmore.ajaxurl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: data,
-      credentials: 'same-origin'
-    })
-      .then(res => res.text())
-      .then(html => {
-        const content = html.trim();
-        if (content !== '' && !content.includes('Aucune photo')) {
-          grid.insertAdjacentHTML('beforeend', content);
-          page++;
+      fetch(loadmore.ajaxurl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: data,
+        credentials: 'same-origin'
+      })
+        .then(res => res.text())
+        .then(html => {
+          const content = html.trim();
+          if (content !== '' && !content.includes('Aucune photo')) {
+            grid.insertAdjacentHTML('beforeend', content);
+            page++;
+            newBtn.disabled = false;
+            newBtn.textContent = 'Charger plus';
+          } else {
+            newBtn.remove();
+            if (!$('.no-more-photos').length) {
+              $('.load-more-container').append('<p class="no-more-photos">Aucune photo trouvée.</p>');
+            }
+          }
+        })
+        .catch(err => {
+          console.error('Erreur AJAX :', err);
           newBtn.disabled = false;
           newBtn.textContent = 'Charger plus';
-        } else {
-          newBtn.remove();
-          if (!$('.no-more-photos').length) {
-            $('.load-more-container').append('<p class="no-more-photos">Aucune photo trouvée.</p>');
-          }
-        }
-      })
-      .catch(err => {
-        console.error('Erreur AJAX :', err);
-        newBtn.disabled = false;
-        newBtn.textContent = 'Charger plus';
-      });
-  });
-}
+        });
+    });
+  }
 
-
-  // filtres
+  // --- Filtres ---
   $('#photo-filters select').on('change', function () {
     currentFilters = {
       categorie: $('#filter-categorie').val(),
@@ -191,8 +206,14 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPhotos(true);
   });
 
-  // init au chargement
+  
   $(function () {
     initLoadMore();
   });
+
+  // --- Fermeture Lightbox ---
+  $(document).on('click', '.lightbox-close, .lightbox-overlay', function () {
+    $('#lightbox').removeClass('active');
+  });
 })(jQuery);
+

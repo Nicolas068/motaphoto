@@ -63,10 +63,10 @@ function openLightbox(index) {
     });
   }
 
-  // Attache sur le DOM initial
+ 
   attachLightboxEvents();
 
-  // Réattache après un chargement AJAX (front-page "Charger plus")
+  
   document.addEventListener('ajaxComplete', attachLightboxEvents);
 
   if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
